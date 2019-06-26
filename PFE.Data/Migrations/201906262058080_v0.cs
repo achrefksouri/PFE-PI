@@ -12,5 +12,7 @@ namespace PFE.Data.Migrations
         public override void Down()
         {
         }
-    }
+
+   }
+    'tets';
 }
