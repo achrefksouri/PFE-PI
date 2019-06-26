@@ -14,5 +14,5 @@ namespace PFE.Data.Migrations
         }
 
    }
-    'tets';
+    
 }
