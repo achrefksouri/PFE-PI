@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\ClassConfiguration.cs" />
+    <Compile Include="Configurations\DepartementConfiguration.cs" />
+    <Compile Include="Configurations\EmployeeConfiguration.cs" />
+    <Compile Include="Configurations\OptionConfiguration.cs" />
+    <Compile Include="Configurations\SiteConfiguration.cs" />
     <Compile Include="Conventions\DateTimeConvention.cs" />
     <Compile Include="Infrastructures\DatabaseFactory.cs" />
     <Compile Include="Infrastructures\Disposable.cs" />
@@ -75,9 +80,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906262058080_v0.resx">
       <DependentUpon>201906262058080_v0.cs</DependentUpon>

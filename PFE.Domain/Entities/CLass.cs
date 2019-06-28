@@ -9,10 +9,13 @@ namespace PFE.Domain.Entities
    public class CLass
     {
         public  int IdClass { get; set; }
+        public string label { get; set; }
 
         //propriétes de navigation
-        public Option Option;
-        public List<Student> StudentList;
-       
+        public Option Option { get; set; }
+        public AcademicYear year { get; set; }
+        public List<Student> StudentList { get; set; }
+        public int YearFK { get; set; }
+
     }
 }

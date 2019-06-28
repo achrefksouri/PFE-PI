@@ -12,6 +12,7 @@ namespace PFE.Domain.Entities
         public  int Session { get; set; }
         //propriétes de navigation
         public List<Student> StudentList;
+        public List<CLass> listCLass { get; set; }
 
 
     }

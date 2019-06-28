@@ -10,9 +10,11 @@ namespace PFE.Domain.Entities
     {
         public int IdSchool { get; set; }
         public string LabelShcool { get; set; }
+        public string Country { get; set; }
 
-        public Country Country;
-        public Site Site;
+
+
+        public List<Site> Siteslist { get; set; } 
 
     }
 }

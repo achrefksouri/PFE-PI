@@ -53,17 +53,14 @@
     <Compile Include="Entities\Action.cs" />
     <Compile Include="Entities\CLass.cs" />
     <Compile Include="Entities\Compagny.cs" />
-    <Compile Include="Entities\Country.cs" />
     <Compile Include="Entities\Departement.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\GraduationProposal.cs" />
     <Compile Include="Entities\IntershipAgreementShhet.cs" />
     <Compile Include="Entities\IntershipSheet.cs" />
     <Compile Include="Entities\Option.cs" />
-    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\School.cs" />
     <Compile Include="Entities\SheetCategory.cs" />
-    <Compile Include="Entities\SheetState.cs" />
     <Compile Include="Entities\Site.cs" />
     <Compile Include="Entities\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

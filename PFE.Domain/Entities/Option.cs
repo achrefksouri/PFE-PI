@@ -10,5 +10,8 @@ namespace PFE.Domain.Entities
     {
         public  int IdOption { get; set; }
         public  string  Label { get; set; }
+        public Departement Departement { get; set; }
+
+        public int DepartementFK { get; set; }
     }
 }
