@@ -12,8 +12,11 @@ namespace PFE.Domain.Entities
         public DateTime StartDate{ get; set; }
         public DateTime DeadLine{ get; set; }
 
-        public IntershipSheet IntershipSheet;
-      
+        public Student Student { get; set; }
+        public int IdStudentFK { get; set; }
+
+
+
 
 
 

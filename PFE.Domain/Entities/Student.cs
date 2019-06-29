@@ -12,5 +12,10 @@ namespace PFE.Domain.Entities
         public string  FirstName{ get; set; }
         public  string LastName { get; set; }
         public  DateTime BirthDate { get; set; }
+        //propriétés de navigation
+        public List<IntershipSheet> IntershipSheetList { get; set; }
+        public List<IntershipAgreementShhet> IntershipAgreementSheetList { get; set; }
+
+
     }
 }

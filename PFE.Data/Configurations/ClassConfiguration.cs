@@ -12,7 +12,10 @@ namespace PFE.Data.Configurations
     {
         public ClassConfiguration()
         {
-            HasRequired<AcademicYear>(a => a.year).WithMany(c => c.listCLass).HasForeignKey(c => c.YearFK).WillCascadeOnDelete(true);
+            HasRequired<AcademicYear>(a => a.AcademicYear)
+                .WithMany(c => c.listCLass)
+                .HasForeignKey(c => c.IdAcademicYearFK)
+                .WillCascadeOnDelete(true);
         }
     }
 }
