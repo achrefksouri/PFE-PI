@@ -16,6 +16,8 @@ namespace PFE.Domain.Entities
         public List<IntershipSheet> IntershipSheetList { get; set; }
         public List<IntershipAgreementShhet> IntershipAgreementSheetList { get; set; }
 
+        public List<GraduationProposal> GraduationpurposalList { get; set; }
+
 
     }
 }
