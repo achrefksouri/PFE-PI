@@ -8,7 +8,13 @@ namespace PFE.Domain.Entities
 {
    public class SheetCategory
     {
-        public  int Id { get; set; }
+        public  int IdSheetCategory { get; set; }
         public  string Label { get; set; }
+
+        //propriétés de navigation
+
+        
+        public List<IntershipSheet> IntershipSheetList { get; set; }
+
     }
 }

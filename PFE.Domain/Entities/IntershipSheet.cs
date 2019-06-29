@@ -22,9 +22,15 @@ namespace PFE.Domain.Entities
 
         public IntershipAgreementShhet IntershipAgreementShhet;
         public Compagny Compagny;
-        public Student Student;
-        public GraduationProposal GraduationProposal;
-        
+        public SheetCategory SheetCategory;
+
+        public Student Student { get; set; }
+        public GraduationProposal GraduationProposal { get; set; }
+        public int IdCompagnyFK { get; set; }
+        public int IdSheetCategoryFK { get; set; }
+        public int IdStudentFK{ get; set; }
+
+
     }
 
 }
