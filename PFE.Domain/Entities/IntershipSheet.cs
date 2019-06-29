@@ -20,9 +20,9 @@ namespace PFE.Domain.Entities
         public DateTime Date { get; set; }
         public string State { get; set; }
 
-        public IntershipAgreementShhet IntershipAgreementShhet;
-        public Compagny Compagny;
-        public Student Student;
+        public IntershipAgreementShhet IntershipAgreementShhet { get; set; }
+        public Compagny Compagny { get; set; }
+        public Student Student { get; set; }
         public GraduationProposal GraduationProposal;
         
     }
