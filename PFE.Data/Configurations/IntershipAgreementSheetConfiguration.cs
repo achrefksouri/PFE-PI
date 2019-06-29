@@ -19,4 +19,5 @@ namespace PFE.Data.Configurations
                   .WillCascadeOnDelete(true);
         }
     }
+    test
 }
