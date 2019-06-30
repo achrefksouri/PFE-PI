@@ -15,5 +15,6 @@ namespace PFE.Domain.Entities
         public List<CLass> listCLass { get; set; }
 
         // test commit
+        //secondTest
     }
 }
