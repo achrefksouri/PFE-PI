@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PFE.Service
 {
-  public  class ActionService : Service<Action>, IActionService
+  public  class ActionService : Service<Domain.Entities.Action>, IActionService
     {
         private static IDatabaseFactory databaseFactory = new DatabaseFactory();
         private static IUnitOfWork unit = new UnitOfWork(databaseFactory);
@@ -17,6 +17,5 @@ namespace PFE.Service
 
         }
     }
-    // ye rabi nchala teslik
-    //iuouoiu
+     
 }

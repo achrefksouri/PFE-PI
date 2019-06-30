@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PFE.Service
 {
-  public  class SheetCategoryService: Service<SheetCategory>,ISheetCategoryService
+  public  class SheetCategoryService: Service <SheetCategory>,ISheetCategoryService
     {
         private static IDatabaseFactory databaseFactory = new DatabaseFactory();
         private static IUnitOfWork unit = new UnitOfWork(databaseFactory);
