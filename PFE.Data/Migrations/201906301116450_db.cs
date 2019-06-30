@@ -3,7 +3,7 @@ namespace PFE.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class v1 : DbMigration
+    public partial class db : DbMigration
     {
         public override void Up()
         {
