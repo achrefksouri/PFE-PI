@@ -1,4 +1,5 @@
-﻿using Service.Pattern;
+﻿using PFE.Domain.Entities;
+using Service.Pattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace PFE.Service
 {
-    interface IActionService: IService<Action>
+   public interface IActionService: IService<Domain.Entities.Action>
     {
+
     }
 }

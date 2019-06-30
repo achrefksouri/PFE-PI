@@ -25,12 +25,12 @@ namespace PFE.Domain.Entities
         public string State { get; set; }
 
        
-        //public Compagny Compagny { get; set; }
+        public Compagny Compagny { get; set; }
         public SheetCategory SheetCategory { get; set; }
         public Student Student { get; set; }
         
         public List<Action> Actionlist { get; set; }
-        //public int CompagnyFK { get; set; }
+        public int CompagnyFK { get; set; }
         public int SheetCategoryFK { get; set; }
         public int StudentFK { get; set; }
 
