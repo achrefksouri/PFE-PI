@@ -17,13 +17,7 @@ namespace PFE.Domain.Entities
 
         public Student Student { get; set; }
         public int StudentFK { get; set; }
-
-
-
-
-
-
-
-
+        public Compagny Compagny { get; set; }
+        public int CompagnyFK { get; set; }
     }
 }

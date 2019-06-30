@@ -19,5 +19,6 @@ namespace PFE.Domain.Entities
         public int Phone { get; set; }
         //propriétes de navigation
         public List<IntershipSheet> InetrshipSheetList { get; set; }
+        public List<IntershipAgreementShhet> IntershipAgreementShhetList { get; set; }
     }
 }

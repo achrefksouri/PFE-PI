@@ -17,7 +17,13 @@ namespace PFE.Data.Configurations
                   .WithMany(r => r.IntershipAgreementSheetList)
                   .HasForeignKey(f => f.StudentFK)
                   .WillCascadeOnDelete(true);
+
+            HasRequired<Compagny>(e => e.Compagny)
+                  .WithMany(r => r.IntershipAgreementShhetList)
+                  .HasForeignKey(f => f.CompagnyFK)
+                  .WillCascadeOnDelete(true);
         }
     }
+    
     
 }
