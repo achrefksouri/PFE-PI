@@ -11,7 +11,7 @@ namespace PFE.Domain.Entities
         public  int Id { get; set; }
         public  string Label { get; set; }
         public IntershipSheet IntershipSheet { get; set; }
-        public string IdIntershipSheetFK { get; set; }
+        public int IntershipSheetFK { get; set; }
 
     }
 }

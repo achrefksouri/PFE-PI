@@ -49,14 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\ActionConfiguration.cs" />
     <Compile Include="Configurations\ClassConfiguration.cs" />
     <Compile Include="Configurations\DepartementConfiguration.cs" />
     <Compile Include="Configurations\EmployeeConfiguration.cs" />
-    <Compile Include="Configurations\InetrshipSheetConfiguration.cs" />
+    <Compile Include="Configurations\GraduationConfiguration.cs" />
+    <Compile Include="Configurations\IntershipSheetConfiguration.cs" />
     <Compile Include="Configurations\IntershipAgreementSheetConfiguration.cs" />
     <Compile Include="Configurations\OptionConfiguration.cs" />
     <Compile Include="Configurations\SiteConfiguration.cs" />
+    <Compile Include="Configurations\StudentConfiguration.cs" />
     <Compile Include="Conventions\DateTimeConvention.cs" />
+    <Compile Include="Conventions\KeyConvention.cs" />
     <Compile Include="Infrastructures\DatabaseFactory.cs" />
     <Compile Include="Infrastructures\Disposable.cs" />
     <Compile Include="Infrastructures\IDatabaseFactory .cs" />
@@ -64,9 +68,9 @@
     <Compile Include="Infrastructures\IUnitOfWork.cs" />
     <Compile Include="Infrastructures\RepositoryBase.cs" />
     <Compile Include="Infrastructures\UnitOfWork.cs" />
-    <Compile Include="Migrations\201906262234191_v1.cs" />
-    <Compile Include="Migrations\201906262234191_v1.Designer.cs">
-      <DependentUpon>201906262234191_v1.cs</DependentUpon>
+    <Compile Include="Migrations\201906301106444_v1.cs" />
+    <Compile Include="Migrations\201906301106444_v1.Designer.cs">
+      <DependentUpon>201906301106444_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -82,10 +86,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906262234191_v1.resx">
-      <DependentUpon>201906262234191_v1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906301106444_v1.resx">
+      <DependentUpon>201906301106444_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

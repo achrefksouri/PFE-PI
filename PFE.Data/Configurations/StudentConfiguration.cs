@@ -8,14 +8,16 @@ using System.Threading.Tasks;
 
 namespace PFE.Data.Configurations
 {
-   public class GraduationConfiguration : EntityTypeConfiguration<GraduationProposal>
+   public class StudentConfiguration : EntityTypeConfiguration<Student>
     {
-        public GraduationConfiguration()
+        public StudentConfiguration()
         {
-            HasRequired<Student>(a => a.Student)
-                .WithMany(c => c.GraduationpurposalList)
-                .HasForeignKey(c => c.StudentFK)
+            HasRequired<CLass>(a => a.Class)
+                .WithMany(a => a.StudentList)
+                .HasForeignKey(a => a.ClassFK)
                 .WillCascadeOnDelete(true);
+
+            
         }
     }
 }

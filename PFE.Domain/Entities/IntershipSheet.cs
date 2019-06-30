@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +11,7 @@ namespace PFE.Domain.Entities
     public enum State { Approved, Rejected }
     public class IntershipSheet
     {
+        [Key]
         public int IdIntershipSheet { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
@@ -17,14 +20,21 @@ namespace PFE.Domain.Entities
         public string Keyword { get; set; }
         public string PersoMail { get; set; }
         public string PeroMail { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public string State { get; set; }
 
-        public IntershipAgreementShhet IntershipAgreementShhet { get; set; }
+       
         public Compagny Compagny { get; set; }
+        public SheetCategory SheetCategory { get; set; }
         public Student Student { get; set; }
-        public GraduationProposal GraduationProposal;
         
+        public List<Action> Actionlist { get; set; }
+        public int CompagnyFK { get; set; }
+        public int SheetCategoryFK { get; set; }
+        public int StudentFK { get; set; }
+
+
     }
 
 }

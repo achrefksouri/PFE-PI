@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 
 namespace PFE.Data.Configurations
 {
-   public class ActionConfiguration : EntityTypeConfiguration<Domain.Entities.Action>
+    public class ActionConfiguration : EntityTypeConfiguration <Domain.Entities.Action>
     {
         public ActionConfiguration()
         {
             HasRequired<IntershipSheet>(a => a.IntershipSheet)
                 .WithMany(c => c.Actionlist)
-                .HasForeignKey(c => c.IdIntershipSheetFK)
+                .HasForeignKey(c => c.IntershipSheetFK)
                 .WillCascadeOnDelete(true);
         }
     }
 }
+
