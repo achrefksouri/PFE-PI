@@ -15,9 +15,11 @@ namespace PFE.Data.Configurations
         {
             HasRequired<Student>(e => e.Student)
                   .WithMany(r => r.IntershipAgreementSheetList)
-                  .HasForeignKey(f => f.IdStudentFK)
+                  .HasForeignKey(f => f.StudentFK)
                   .WillCascadeOnDelete(true);
+            
         }
     }
+    
     
 }

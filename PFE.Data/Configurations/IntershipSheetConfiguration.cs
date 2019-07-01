@@ -8,29 +8,24 @@ using System.Threading.Tasks;
 
 namespace PFE.Data.Configurations
 {
-    class InetrshipSheetConfiguration : EntityTypeConfiguration<IntershipSheet>
+    public class IntershipSheetConfiguration : EntityTypeConfiguration<IntershipSheet>
     {
-        public InetrshipSheetConfiguration()
+        public IntershipSheetConfiguration()
         {
             HasRequired<Compagny>(a => a.Compagny)
                   .WithMany(t => t.InetrshipSheetList)
-                  .HasForeignKey(e => e.IdCompagnyFK)
+                  .HasForeignKey(e => e.CompagnyFK)
                   .WillCascadeOnDelete(true);
 
             HasRequired<SheetCategory>(a => a.SheetCategory)
                 .WithMany(e => e.IntershipSheetList)
-                .HasForeignKey(s => s.IdSheetCategoryFK)
+                .HasForeignKey(s => s.SheetCategoryFK)
                 .WillCascadeOnDelete(true);
 
            HasRequired<Student>(a => a.Student)
                 .WithMany(e => e.IntershipSheetList)
-                .HasForeignKey(s => s.IdStudentFK)
+                .HasForeignKey(s => s.StudentFK)
                 .WillCascadeOnDelete(true);
-
-
-
-
-
 
         }
     }

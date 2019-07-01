@@ -14,7 +14,7 @@ namespace PFE.Domain.Entities
         
         public int SchoolFK { get; set; }
         
-        public List<Departement> DepartementList;
+        public List<Departement> DepartementList { get; set; }
     }
 
 }

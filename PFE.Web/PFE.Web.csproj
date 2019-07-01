@@ -206,8 +206,21 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActionController.cs" />
+    <Compile Include="Controllers\AgreementController.cs" />
+    <Compile Include="Controllers\ClassController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\DepartementController.cs" />
+    <Compile Include="Controllers\EmplyeeController.cs" />
+    <Compile Include="Controllers\GraduationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InternshipsheetController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OptionController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
+    <Compile Include="Controllers\SheetCategoryController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -277,9 +290,28 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Internshipsheet\Create.cshtml" />
+    <Content Include="Views\Company\Create.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Internshipsheet\Index.cshtml" />
+    <Content Include="Views\Action\Index.cshtml" />
+    <Content Include="Views\Action\Create.cshtml" />
+    <Content Include="Views\Sheetcategory\Index.cshtml" />
+    <Content Include="Views\Sheetcategory\Create.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Agreement\" />
+    <Folder Include="Views\Class\" />
+    <Folder Include="Views\Departement\" />
+    <Folder Include="Views\Emplyee\" />
+    <Folder Include="Views\Graduation\" />
+    <Folder Include="Views\Intershipsheet\" />
+    <Folder Include="Views\Option\" />
+    <Folder Include="Views\School\" />
+    <Folder Include="Views\Site\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

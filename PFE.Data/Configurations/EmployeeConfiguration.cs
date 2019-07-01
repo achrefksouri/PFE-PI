@@ -12,7 +12,7 @@ namespace PFE.Data.Configurations
     {
         public EmployeeConfiguration()
         {
-            HasRequired<Departement>(s => s.Departement).WithMany(c => c.EmployeeList).HasForeignKey(c => c.DepFK).WillCascadeOnDelete(true);
+            HasRequired<Departement>(s => s.Departement).WithMany(c => c.EmployeeList).HasForeignKey(c => c.DepartementFK).WillCascadeOnDelete(true);
         }
     }
 }
