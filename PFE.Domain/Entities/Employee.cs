@@ -14,6 +14,7 @@ namespace PFE.Domain.Entities
         public string FirstName { get; set; }
         public string Role { get; set; }
         //propriétes de navigation
+        //propriétes de navigation
         public Departement Departement { get; set; }
         public int DepartementFK { get; set; }
 
