@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PFE.Domain.Entities;
+using PFE.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,11 @@ namespace PFE.Web.Controllers
 {
     public class AgreementController : Controller
     {
+        IAgreementService bs = new AgreementService();
         // GET: Agreement
         public ActionResult Index()
         {
-            return View();
+            return View(bs.GetAll());
         }
 
         // GET: Agreement/Details/5
@@ -28,18 +31,13 @@ namespace PFE.Web.Controllers
 
         // POST: Agreement/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(IntershipAgreementShhet agr)
         {
-            try
-            {
-                // TODO: Add insert logic here
 
+            bs.Add(agr);
+            bs.Commit();
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            
         }
 
         // GET: Agreement/Edit/5
