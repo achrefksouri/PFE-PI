@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace PFE.Service
 {
 
-    interface IClassService: IService<CLass>
+    public interface IClassService: IService<CLass>
     {
     }
 }

@@ -19,6 +19,6 @@ namespace PFE.Data.Configurations
                 .WillCascadeOnDelete(true);
         }
     }
-    //ye haifa ta3abtna
+    
 }
 
