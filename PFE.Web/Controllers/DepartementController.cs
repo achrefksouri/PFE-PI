@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PFE.Domain.Entities;
+using PFE.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,11 @@ namespace PFE.Web.Controllers
 {
     public class DepartementController : Controller
     {
+        IDepartmentService de = new DepartmentService();
         // GET: Departement
         public ActionResult Index()
         {
-            return View();
+            return View(de.GetAll());
         }
 
         // GET: Departement/Details/5
@@ -28,18 +31,13 @@ namespace PFE.Web.Controllers
 
         // POST: Departement/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Departement dep)
         {
-            try
-            {
-                // TODO: Add insert logic here
 
+            de.Add(dep);
+            de.Commit();
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+           
         }
 
         // GET: Departement/Edit/5

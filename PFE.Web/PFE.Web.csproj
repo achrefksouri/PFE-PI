@@ -300,15 +300,17 @@
     <Content Include="Views\Sheetcategory\Create.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Agreement\Create.cshtml" />
+    <Content Include="Views\Agreement\Index.cshtml" />
+    <Content Include="Views\Class\Index.cshtml" />
+    <Content Include="Views\Class\Create.cshtml" />
+    <Content Include="Views\Departement\Create.cshtml" />
+    <Content Include="Views\Departement\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Agreement\" />
-    <Folder Include="Views\Class\" />
-    <Folder Include="Views\Departement\" />
     <Folder Include="Views\Emplyee\" />
     <Folder Include="Views\Graduation\" />
-    <Folder Include="Views\Intershipsheet\" />
     <Folder Include="Views\Option\" />
     <Folder Include="Views\School\" />
     <Folder Include="Views\Site\" />
