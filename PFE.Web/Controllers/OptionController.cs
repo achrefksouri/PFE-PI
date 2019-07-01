@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PFE.Domain.Entities;
+using PFE.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,11 @@ namespace PFE.Web.Controllers
 {
     public class OptionController : Controller
     {
+        IOptionService os = new OptionService();
         // GET: Option
         public ActionResult Index()
         {
-            return View();
+            return View(os.GetAll());
         }
 
         // GET: Option/Details/5
@@ -28,18 +31,12 @@ namespace PFE.Web.Controllers
 
         // POST: Option/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Option op)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
+            os.Add(op);
+            os.Commit();
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+           
         }
 
         // GET: Option/Edit/5
