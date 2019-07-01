@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PFE.Domain.Entities;
+using PFE.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,7 +9,9 @@ using System.Web.Mvc;
 namespace PFE.Web.Controllers
 {
     public class EmplyeeController : Controller
+
     {
+        IEmployeeService em = new EmployeeService();
         // GET: Emplyee
         public ActionResult Index()
         {
@@ -28,12 +32,13 @@ namespace PFE.Web.Controllers
 
         // POST: Emplyee/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Employee emp)
         {
             try
             {
                 // TODO: Add insert logic here
-
+                em.Add(emp);
+                em.Commit();
                 return RedirectToAction("Index");
             }
             catch

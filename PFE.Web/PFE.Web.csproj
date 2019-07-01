@@ -306,13 +306,14 @@
     <Content Include="Views\Class\Create.cshtml" />
     <Content Include="Views\Departement\Create.cshtml" />
     <Content Include="Views\Departement\Index.cshtml" />
+    <Content Include="Views\Emplyee\Create.cshtml" />
+    <Content Include="Views\Emplyee\Index.cshtml" />
+    <Content Include="Views\School\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Emplyee\" />
     <Folder Include="Views\Graduation\" />
     <Folder Include="Views\Option\" />
-    <Folder Include="Views\School\" />
     <Folder Include="Views\Site\" />
   </ItemGroup>
   <ItemGroup>
