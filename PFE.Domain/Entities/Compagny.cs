@@ -18,7 +18,7 @@ namespace PFE.Domain.Entities
         public string SupervisorEmail{ get; set; }
         public int Phone { get; set; }
         //propriétes de navigation
-        public List<IntershipSheet> InetrshipSheetList { get; set; }
-        public List<IntershipAgreementShhet> IntershipAgreementShhetList { get; set; }
+        public virtual ICollection<IntershipSheet> InetrshipSheetList { get; set; }
+        public virtual ICollection<IntershipAgreementShhet> IntershipAgreementShhetList { get; set; }
     }
 }

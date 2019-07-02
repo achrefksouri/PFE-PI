@@ -12,7 +12,7 @@ namespace PFE.Data.Configurations
     {
         public SiteConfiguration()
         {
-            HasRequired<School>(s => s.School).WithMany(c => c.Siteslist).HasForeignKey(c => c.SchoolFK).WillCascadeOnDelete(true);
+            HasOptional<School>(s => s.School).WithMany(c => c.Siteslist).HasForeignKey(c => c.SchoolFK).WillCascadeOnDelete(true);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,12 @@ namespace PFE.Domain.Entities
         public  DateTime BirthDate { get; set; }
         //propriétés de navigation
  
-        public List <IntershipAgreementShhet> IntershipAgreementSheets { get; set; }
- 
-        public CLass Class { get; set; }
+        public virtual ICollection <IntershipAgreementShhet> IntershipAgreementSheets { get; set; }
         public int ClassFK { get; set; }
-        public List<GraduationProposal> GraduationpurposalList { get; set; }
+        [ForeignKey("ClassFK")]
+        public virtual CLass Class { get; set; }
+        
+        public virtual ICollection <GraduationProposal> GraduationpurposalList { get; set; }
         
 
 

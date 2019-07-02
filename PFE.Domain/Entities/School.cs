@@ -11,7 +11,10 @@ namespace PFE.Domain.Entities
         public int IdSchool { get; set; }
         public string LabelShcool { get; set; }
         public string Country { get; set; }
-        public List<Site> Siteslist { get; set; } 
+
+
+
+        public virtual ICollection<Site> Siteslist { get; set; } 
 
     }
 }

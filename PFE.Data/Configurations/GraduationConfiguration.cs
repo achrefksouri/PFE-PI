@@ -12,10 +12,10 @@ namespace PFE.Data.Configurations
     {
         public GraduationConfiguration()
         {
-            HasRequired<Student>(a => a.Student)
+            HasOptional<Student>(a => a.Student)
                 .WithMany(c => c.GraduationpurposalList)
                 .HasForeignKey(c => c.StudentFK)
-                .WillCascadeOnDelete(true);
+                .WillCascadeOnDelete(false);
         }
     }
 }

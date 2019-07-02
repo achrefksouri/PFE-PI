@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,12 @@ namespace PFE.Domain.Entities
         public int IdEmployee { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        public string Role { get; set; }
-        //propriétes de navigation
-        //propriétes de navigation
-        public Departement Departement { get; set; }
+        public Role Role { get; set; }
         public int DepartementFK { get; set; }
+        //propriétes de navigation
+        [ForeignKey("DepartementFK")]
+        public virtual Departement Departement { get; set; }
+        
 
 
     }

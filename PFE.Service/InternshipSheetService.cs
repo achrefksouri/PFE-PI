@@ -9,13 +9,23 @@ using System.Threading.Tasks;
 
 namespace PFE.Service
 {
-  public  class InternshipSheetService: Service<IntershipSheet>,IInternshipSheetService
+    public class InternshipSheetService : Service<IntershipSheet>, IInternshipSheetService
     {
         private static IDatabaseFactory databaseFactory = new DatabaseFactory();
         private static IUnitOfWork unit = new UnitOfWork(databaseFactory);
-        public InternshipSheetService():base(unit)
+        public InternshipSheetService() : base(unit)
         {
 
+            //}
+            //public IEnumerable<IntershipSheet> listetraitfich()
+            //{
+            //    var v = GetMany(t => t.State == State.Approved).OfType<IntershipSheet>();
+            //    foreach (var item in v)
+            //    {
+            //        Console.WriteLine("Livre" + item.Titre);
+            //    }
+            //    return v;
+            //}
         }
         //public List<Adherant> ListeAdherant()
         //    //{
@@ -27,3 +37,4 @@ namespace PFE.Service
         //}
     }
 }
+

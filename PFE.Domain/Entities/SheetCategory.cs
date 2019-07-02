@@ -14,7 +14,7 @@ namespace PFE.Domain.Entities
         //propriétés de navigation
 
         
-        public List<IntershipSheet> IntershipSheetList { get; set; }
+        public virtual ICollection<IntershipSheet> IntershipSheetList { get; set; }
 
     }
 }

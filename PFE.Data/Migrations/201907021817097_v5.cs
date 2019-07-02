@@ -3,7 +3,7 @@ namespace PFE.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class v1 : DbMigration
+    public partial class v5 : DbMigration
     {
         public override void Up()
         {
@@ -51,8 +51,8 @@ namespace PFE.Data.Migrations
                     {
                         IdClass = c.Int(nullable: false, identity: true),
                         label = c.String(),
-                        AcademicYear = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                         OptionFK = c.Int(nullable: false),
+                        AcademicYear = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                     })
                 .PrimaryKey(t => t.IdClass)
                 .ForeignKey("dbo.Options", t => t.OptionFK, cascadeDelete: true)
@@ -131,7 +131,7 @@ namespace PFE.Data.Migrations
                         PersoMail = c.String(),
                         PeroMail = c.String(),
                         Date = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
-                        State = c.String(),
+                        State = c.Int(nullable: false),
                         SheetCategoryFK = c.Int(nullable: false),
                         IntershipAgreementShhetFK = c.Int(nullable: false),
                         Compagny_IdCompagny = c.Int(),

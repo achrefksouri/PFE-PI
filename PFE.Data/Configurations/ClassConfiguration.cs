@@ -14,10 +14,10 @@ namespace PFE.Data.Configurations
         public ClassConfiguration()
         {
             
-            HasRequired<Option>(o => o.Option)
-                    .WithMany(c => c.ClassList)
-                    .HasForeignKey(c => c.OptionFK)
-                    .WillCascadeOnDelete(true);
+            //HasOptional<Option>(o => o.Option)
+            //        .WithMany(c => c.ClassList)
+            //        .HasForeignKey(c => c.OptionFK)
+            //        .WillCascadeOnDelete(false);
 
         
 
