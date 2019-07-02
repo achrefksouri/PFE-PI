@@ -13,16 +13,16 @@ namespace PFE.Data.Configurations
     {
         public ClassConfiguration()
         {
-
+            
             //HasOptional<Option>(o => o.Option)
             //        .WithMany(c => c.ClassList)
             //        .HasForeignKey(c => c.OptionFK)
             //        .WillCascadeOnDelete(false);
 
-            //        .WillCascadeOnDelete(false);
+        
 
-
-
+                
+            
         }
     }
 }
