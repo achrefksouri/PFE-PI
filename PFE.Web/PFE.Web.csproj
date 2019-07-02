@@ -290,20 +290,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Internshipsheet\Create.cshtml" />
     <Content Include="Views\Company\Create.cshtml" />
     <Content Include="Views\Company\Index.cshtml" />
-    <Content Include="Views\Internshipsheet\Index.cshtml" />
     <Content Include="Views\Action\Index.cshtml" />
     <Content Include="Views\Action\Create.cshtml" />
     <Content Include="Views\Sheetcategory\Index.cshtml" />
     <Content Include="Views\Sheetcategory\Create.cshtml" />
-    <Content Include="Views\Student\Create.cshtml" />
-    <Content Include="Views\Student\Index.cshtml" />
-    <Content Include="Views\Agreement\Create.cshtml" />
-    <Content Include="Views\Agreement\Index.cshtml" />
-    <Content Include="Views\Class\Index.cshtml" />
-    <Content Include="Views\Class\Create.cshtml" />
     <Content Include="Views\Departement\Create.cshtml" />
     <Content Include="Views\Departement\Index.cshtml" />
     <Content Include="Views\Emplyee\Index.cshtml" />
@@ -316,6 +308,15 @@
     <Content Include="Views\School\Index.cshtml" />
     <Content Include="Views\Site\Create.cshtml" />
     <Content Include="Views\Site\Index.cshtml" />
+    <Content Include="Views\School\Details.cshtml" />
+    <Content Include="Views\Class\Index.cshtml" />
+    <Content Include="Views\Class\Create.cshtml" />
+    <Content Include="Views\Internshipsheet\Index.cshtml" />
+    <Content Include="Views\Internshipsheet\Create.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Agreement\Index.cshtml" />
+    <Content Include="Views\Agreement\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
