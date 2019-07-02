@@ -7,13 +7,13 @@ namespace PFE.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class yesyes : IMigrationMetadata
+    public sealed partial class v1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(yesyes));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(v1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201907021132317_yesyes"; }
+            get { return "201907021158535_v1"; }
         }
         
         string IMigrationMetadata.Source
