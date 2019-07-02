@@ -27,6 +27,11 @@ namespace PFE.Web.Controllers
         {
             return View();
         }
+        //Get Intersheet by compagny
+        public ActionResult ListInterSheet()
+        {
+            return View();
+        }
 
         // GET: Internshipsheet/Create
         public ActionResult Create()

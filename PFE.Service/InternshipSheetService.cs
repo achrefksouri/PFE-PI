@@ -17,5 +17,13 @@ namespace PFE.Service
         {
 
         }
+        //public List<Adherant> ListeAdherant()
+        //    //{
+        //    //    GetAll().OrderBy(s => s.Email).ToList();
+        //    //}
+        public List<IntershipSheet> ListInterSheet()
+        {
+            return GetAll().OrderBy(s => s.Compagny).ToList();
+        }
     }
 }

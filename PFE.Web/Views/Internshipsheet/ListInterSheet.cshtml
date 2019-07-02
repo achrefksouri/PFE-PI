@@ -1,0 +1,99 @@
+﻿@model IEnumerable<PFE.Domain.Entities.IntershipSheet>
+
+@{
+    ViewBag.Title = "ListInterSheet";
+}
+
+<h2>ListInterSheet</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Issue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fonctionality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Keyword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersoMail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PeroMail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompagnyFK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SheetCategoryFK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentFK)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Issue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fonctionality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Keyword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersoMail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PeroMail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompagnyFK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SheetCategoryFK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentFK)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdIntershipSheet }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdIntershipSheet }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdIntershipSheet })
+        </td>
+    </tr>
+}
+
+</table>
