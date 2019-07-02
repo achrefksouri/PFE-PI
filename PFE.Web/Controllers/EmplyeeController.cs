@@ -9,13 +9,12 @@ using System.Web.Mvc;
 namespace PFE.Web.Controllers
 {
     public class EmplyeeController : Controller
-
     {
-        IEmployeeService em = new EmployeeService();
+        IEmployeeService es = new EmployeeService();
         // GET: Emplyee
         public ActionResult Index()
         {
-            return View();
+            return View(es.GetAll());
         }
 
         // GET: Emplyee/Details/5
@@ -34,17 +33,11 @@ namespace PFE.Web.Controllers
         [HttpPost]
         public ActionResult Create(Employee emp)
         {
-            try
-            {
-                // TODO: Add insert logic here
-                em.Add(emp);
-                em.Commit();
+             es.Add(emp);
+             es.Commit();
+
                 return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+           
         }
 
         // GET: Emplyee/Edit/5

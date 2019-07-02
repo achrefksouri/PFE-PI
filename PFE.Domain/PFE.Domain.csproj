@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\AcademicYear.cs" />
     <Compile Include="Entities\Action.cs" />
     <Compile Include="Entities\CLass.cs" />
     <Compile Include="Entities\Compagny.cs" />

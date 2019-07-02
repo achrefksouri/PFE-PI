@@ -12,11 +12,12 @@ namespace PFE.Domain.Entities
         public  int IdStudent { get; set; }
         public string  FirstName{ get; set; }
         public  string LastName { get; set; }
-        [DataType(DataType.Date)]
+        [DataType(DataType.Date)] 
         public  DateTime BirthDate { get; set; }
         //propriétés de navigation
-        public List<IntershipSheet> IntershipSheetList { get; set; }
-        public List<IntershipAgreementShhet> IntershipAgreementSheetList { get; set; }
+ 
+        public List <IntershipAgreementShhet> IntershipAgreementSheets { get; set; }
+ 
         public CLass Class { get; set; }
         public int ClassFK { get; set; }
         public List<GraduationProposal> GraduationpurposalList { get; set; }

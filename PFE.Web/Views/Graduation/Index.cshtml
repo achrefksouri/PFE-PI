@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PFE.Domain.Entities.IntershipAgreementShhet>
+﻿@model IEnumerable<PFE.Domain.Entities.GraduationProposal>
 
 @{
     ViewBag.Title = "Index";
@@ -12,19 +12,19 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.IdIntershipAgreementShhet)
+            @Html.DisplayNameFor(model => model.IdGraduateProposal)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StartDate)
+            @Html.DisplayNameFor(model => model.DateGraduateProposal)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DeadLine)
+            @Html.DisplayNameFor(model => model.Classroom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.statuts)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.StudentFK)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CompagnyFK)
         </th>
         <th></th>
     </tr>
@@ -32,19 +32,19 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.IdIntershipAgreementShhet)
+            @Html.DisplayFor(modelItem => item.IdGraduateProposal)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.StartDate)
+            @Html.DisplayFor(modelItem => item.DateGraduateProposal)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DeadLine)
+            @Html.DisplayFor(modelItem => item.Classroom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statuts)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.StudentFK)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompagnyFK)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

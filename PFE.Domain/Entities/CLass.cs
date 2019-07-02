@@ -13,14 +13,14 @@ namespace PFE.Domain.Entities
 
         //propriétes de navigation
         public Option Option { get; set; }
-        public AcademicYear AcademicYear { get; set; }
+        public DateTime AcademicYear { get; set; }
 
        
 
         public List<Student> StudentList { get; set; }
 
         
-        public int AcademicYearFK { get; set; }
+       
         public int OptionFK { get; set; }
        
 

@@ -10,5 +10,8 @@ namespace PFE.Service
 {
   public  interface IStudentService: IService<Student>
     {
+        //public List<Student> StNoSheet(DateTime annee);
+        // public void StNoSheet(DateTime annee);
+        int nbrtotdesetudiants();
     }
 }

@@ -8,7 +8,7 @@ namespace PFE.Domain.Entities
 {
    public class Action
     {
-        public  int Id { get; set; }
+        public  int IdAction { get; set; }
         public  string Label { get; set; }
         public IntershipSheet IntershipSheet { get; set; }
         public int IntershipSheetFK { get; set; }
