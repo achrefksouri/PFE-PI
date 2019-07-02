@@ -68,27 +68,6 @@
     <Compile Include="Infrastructures\IUnitOfWork.cs" />
     <Compile Include="Infrastructures\RepositoryBase.cs" />
     <Compile Include="Infrastructures\UnitOfWork.cs" />
-    <Compile Include="Migrations\201907021817097_v5.cs" />
-    <Compile Include="Migrations\201907021817097_v5.Designer.cs">
-      <DependentUpon>201907021817097_v5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021918581_new.cs" />
-    <Compile Include="Migrations\201907021918581_new.Designer.cs">
-      <DependentUpon>201907021918581_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021931574_new45.cs" />
-    <Compile Include="Migrations\201907021931574_new45.Designer.cs">
-      <DependentUpon>201907021931574_new45.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021955146_new457.cs" />
-    <Compile Include="Migrations\201907021955146_new457.Designer.cs">
-      <DependentUpon>201907021955146_new457.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907022201030_new5.cs" />
-    <Compile Include="Migrations\201907022201030_new5.Designer.cs">
-      <DependentUpon>201907022201030_new5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,23 +80,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907021817097_v5.resx">
-      <DependentUpon>201907021817097_v5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021918581_new.resx">
-      <DependentUpon>201907021918581_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021931574_new45.resx">
-      <DependentUpon>201907021931574_new45.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021955146_new457.resx">
-      <DependentUpon>201907021955146_new457.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907022201030_new5.resx">
-      <DependentUpon>201907022201030_new5.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
