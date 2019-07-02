@@ -11,9 +11,9 @@ namespace PFE.Domain.Entities
     public enum State { Approved, Rejected }
     public class IntershipSheet
     {
-       
+
         public int IdIntershipSheet { get; set; }
-    
+
         public string Title { get; set; }
         public string Description { get; set; }
         public string Issue { get; set; }
@@ -24,15 +24,15 @@ namespace PFE.Domain.Entities
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public string State { get; set; }
-      
+
         public SheetCategory SheetCategory { get; set; }
-        
-        
+
+
         public List<Action> Actionlist { get; set; }
-       
+
         public int SheetCategoryFK { get; set; }
-       
-        public virtual IntershipAgreementShhet IntershipAgreementShhet { get; set; }
+
+        public virtual  ICollection <IntershipSheet> Inter{ get; set; }
         public int IntershipAgreementShhetFK{ get; set; }
 
 

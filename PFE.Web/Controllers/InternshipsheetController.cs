@@ -1,5 +1,6 @@
 ﻿using PFE.Domain.Entities;
 using PFE.Service;
+using PFE.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,41 @@ namespace PFE.Web.Controllers
     {
         IInternshipSheetService bs = new InternshipSheetService();
         // GET: Company
-        
-            
-        
+        //public ActionResult Details(int id)
+        //{
+
+        //    var bib = DS.GetById(id);
+
+
+        //    DocumentViewModel bvm = new DocumentViewModel();
+        //    bvm.Categorie = bib.Categorie;
+        //    bvm.DocumentCode = bib.DocumentCode;
+        //    bvm.Etat = (BibliothequeWeb.Models.Etat)bib.Etat;
+        //    bvm.Titre = bib.Titre;
+        //    bvm.BibliothequeFK = bib.BibliothequeFK;
+
+        //    return View(bvm);
+
+
+        //}
+        public ActionResult Details(int id)
+        {
+            var Inter = bs.GetById(id);
+            InterShipSheetViewModel IVM = new InterShipSheetViewModel();
+            IVM.Issue = Inter.Issue;
+            IVM.Keyword = Inter.Keyword;
+            IVM.PeroMail = Inter.PeroMail;
+            IVM.PersoMail = Inter.PersoMail;
+
+
+
+
+            return View(IVM);
+
+
+        }
+
+
         // GET: Internshipsheet
         public ActionResult Index()
         {
