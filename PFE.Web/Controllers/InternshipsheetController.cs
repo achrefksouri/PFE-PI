@@ -25,25 +25,7 @@ namespace PFE.Web.Controllers
         // GET: Internshipsheet/Details/5
         public ActionResult Details(int id)
         {
-            //var bib = bs.GetById(id);
-
-
-            //IntershipSheet bvm = new IntershipSheet();
-            //bvm.Title = bib.Title;
-            //bvm.Description = bib.Description;
-            //bvm.Fonctionality = bib.Fonctionality;
-
-            //bvm.Issue = bib.Issue;
-            //bvm.Keyword = bib.Keyword;
-            //bvm.PeroMail = bib.PeroMail;
-
-            //bvm.PersoMail = bib.PersoMail;
-            //bvm.State = bib.State;
-            //bvm.SheetCategoryFK = bib.SheetCategoryFK;
-
-            //bvm.StudentFK = bib.StudentFK;
-            //bvm.CompagnyFK = bib.CompagnyFK;
-            //bvm.Date = bib.Date;
+       
 
             return View();
 

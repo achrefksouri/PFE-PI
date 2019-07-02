@@ -15,12 +15,7 @@ namespace PFE.Domain.Entities
         public Option Option { get; set; }
         public DateTime AcademicYear { get; set; }
 
-       
-
         public List<Student> StudentList { get; set; }
-
-        
-       
         public int OptionFK { get; set; }
        
 
