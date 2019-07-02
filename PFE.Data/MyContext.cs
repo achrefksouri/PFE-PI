@@ -17,6 +17,7 @@ namespace PFE.Data
 
         }
         public DbSet<IntershipSheet> IntershipSheet { get; set; }
+        public DbSet<IntershipAgreementShhet> IntershipAgreementShhets { get; set; }
         public DbSet<Departement> Departement { get; set; }
         public DbSet<Student> Student { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

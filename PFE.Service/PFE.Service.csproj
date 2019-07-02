@@ -64,12 +64,14 @@
     <Compile Include="IEmployeeService.cs" />
     <Compile Include="IGraduationService.cs" />
     <Compile Include="IInternshipSheetService.cs" />
+    <Compile Include="IListService.cs" />
     <Compile Include="InternshipSheetService.cs" />
     <Compile Include="IOptionService.cs" />
     <Compile Include="ISchoolService.cs" />
     <Compile Include="ISheetCategoryService.cs" />
     <Compile Include="ISite.cs" />
     <Compile Include="IStudentService.cs" />
+    <Compile Include="ListService.cs" />
     <Compile Include="OptionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolService.cs" />

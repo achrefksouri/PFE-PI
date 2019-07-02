@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace PFE.Service
 {
-  public  interface IStudentService: IService<Student>
+    public interface IListService : IService<IntershipSheet>
     {
-        //public List<Student> StNoSheet(DateTime annee);
-        // public void StNoSheet(DateTime annee);
-        int nbrtotdesetudiants();
+
     }
 }

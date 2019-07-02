@@ -9,7 +9,7 @@ namespace PFE.Domain.Entities
 {
    public class IntershipAgreementShhet
     {
-        public int Id{ get; set; }
+        public int IdIntershipAgreementShhet { get; set; }
         [DataType(DataType.Date)]
         public DateTime StartDate{ get; set; }
         [DataType(DataType.Date)]
@@ -19,5 +19,6 @@ namespace PFE.Domain.Entities
         public int StudentFK { get; set; }
         public Compagny Compagny { get; set; }
         public int CompagnyFK { get; set; }
+        public virtual List< IntershipSheet> IntershipSheets { get; set; }
     }
 }

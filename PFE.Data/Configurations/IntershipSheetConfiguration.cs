@@ -12,20 +12,17 @@ namespace PFE.Data.Configurations
     {
         public IntershipSheetConfiguration()
         {
-            HasRequired<Compagny>(a => a.Compagny)
-                  .WithMany(t => t.InetrshipSheetList)
-                  .HasForeignKey(e => e.CompagnyFK)
-                  .WillCascadeOnDelete(true);
-
+           
             HasRequired<SheetCategory>(a => a.SheetCategory)
                 .WithMany(e => e.IntershipSheetList)
                 .HasForeignKey(s => s.SheetCategoryFK)
                 .WillCascadeOnDelete(true);
 
-           HasRequired<Student>(a => a.Student)
-                .WithMany(e => e.IntershipSheetList)
-                .HasForeignKey(s => s.StudentFK)
-                .WillCascadeOnDelete(true);
+            HasRequired<IntershipAgreementShhet>(i => i.IntershipAgreementShhet)
+               .WithMany(f => f.IntershipSheets)
+               .HasForeignKey(r => r.IntershipAgreementShhetFK)
+               .WillCascadeOnDelete(true);
+
 
         }
     }
