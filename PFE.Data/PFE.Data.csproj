@@ -68,9 +68,9 @@
     <Compile Include="Infrastructures\IUnitOfWork.cs" />
     <Compile Include="Infrastructures\RepositoryBase.cs" />
     <Compile Include="Infrastructures\UnitOfWork.cs" />
-    <Compile Include="Migrations\201907021132317_yesyes.cs" />
-    <Compile Include="Migrations\201907021132317_yesyes.Designer.cs">
-      <DependentUpon>201907021132317_yesyes.cs</DependentUpon>
+    <Compile Include="Migrations\201907021158535_v1.cs" />
+    <Compile Include="Migrations\201907021158535_v1.Designer.cs">
+      <DependentUpon>201907021158535_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -87,8 +87,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907021132317_yesyes.resx">
-      <DependentUpon>201907021132317_yesyes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907021158535_v1.resx">
+      <DependentUpon>201907021158535_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
