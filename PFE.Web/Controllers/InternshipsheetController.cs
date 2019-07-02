@@ -31,22 +31,22 @@ namespace PFE.Web.Controllers
 
 
         //}
-        public ActionResult Details(int id)
-        {
-            var Inter = bs.GetById(id);
-            InterShipSheetViewModel IVM = new InterShipSheetViewModel();
-            IVM.Issue = Inter.Issue;
-            IVM.Keyword = Inter.Keyword;
-            IVM.PeroMail = Inter.PeroMail;
-            IVM.PersoMail = Inter.PersoMail;
+        //public ActionResult Details(int id)
+        //{
+            //var Inter = bs.GetById(id);
+            //InterShipSheetViewModel IVM = new InterShipSheetViewModel();
+            //IVM.Issue = Inter.Issue;
+            //IVM.Keyword = Inter.Keyword;
+            //IVM.PeroMail = Inter.PeroMail;
+            //IVM.PersoMail = Inter.PersoMail;
 
 
 
 
-            return View(IVM);
+            //return View(IVM);
 
 
-        }
+        //}
 
 
         // GET: Internshipsheet

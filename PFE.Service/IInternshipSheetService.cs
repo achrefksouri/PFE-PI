@@ -11,6 +11,6 @@ namespace PFE.Service
     public interface IInternshipSheetService : IService<IntershipSheet>
     {
         //    //public List<Adherant> ListeAdherant()
-        List<IntershipSheet> ListInterSheet();
+        //List<IntershipSheet> ListInterSheet();
       }
 }

@@ -11,7 +11,7 @@ namespace PFE.Service
 {
     public class StudentService: Service<Student>, IStudentService
     {
-        List<Student> StudentsNoSheet;
+        //List<Student> StudentsNoSheet;
 
         private static IDatabaseFactory databaseFactory = new DatabaseFactory();
         private static IUnitOfWork unit = new UnitOfWork(databaseFactory);
