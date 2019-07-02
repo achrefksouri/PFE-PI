@@ -1,5 +1,6 @@
 ﻿using PFE.Domain.Entities;
 using PFE.Service;
+using PFE.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace PFE.Web.Controllers
     public class ClassController : Controller
     {
         IClassService cl = new ClassService();
+        IOptionService op = new OptionService();
         // GET: Class
         public ActionResult Index()
         {
@@ -26,8 +28,21 @@ namespace PFE.Web.Controllers
         // GET: Class/Create
         public ActionResult Create()
         {
+            var opt = op.GetAll();
+            List<OptionViewModel>opvm = new List<OptionViewModel>();
+            foreach (var item in opt)
+            {
+                OptionViewModel optvm = new OptionViewModel();
+                optvm.IdOption = item.IdOption;
+                optvm.Label = item.Label;
+                opvm.Add(optvm);
+
+            }
+
+            ViewData["Option"] = new SelectList(opvm, "IdOption", "IdOption");
             return View();
         }
+    
 
         // POST: Class/Create
         [HttpPost]

@@ -13,10 +13,10 @@ namespace PFE.Data.Configurations
     {
         public ClassConfiguration()
         {
-            HasRequired<AcademicYear>(a => a.AcademicYear)
-                .WithMany(c => c.listCLass)
-                .HasForeignKey(c => c.AcademicYearFK)
-                .WillCascadeOnDelete(true);
+            //HasRequired<AcademicYear>(a => a.AcademicYear)
+            //    .WithMany(c => c.listCLass)
+            //    .HasForeignKey(c => c.AcademicYearFK)
+            //    .WillCascadeOnDelete(true);
 
             HasRequired<Option>(o => o.Option)
                     .WithMany(c => c.ClassList)

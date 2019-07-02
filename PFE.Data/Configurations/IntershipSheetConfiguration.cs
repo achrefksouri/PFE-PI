@@ -22,11 +22,12 @@ namespace PFE.Data.Configurations
                 .HasForeignKey(s => s.SheetCategoryFK)
                 .WillCascadeOnDelete(true);
 
-           HasRequired<Student>(a => a.Student)
-                .WithMany(e => e.IntershipSheetList)
-                .HasForeignKey(s => s.StudentFK)
-                .WillCascadeOnDelete(true);
+            HasRequired<Student>(a => a.Student)
+                 .WithMany(e => e.IntershipSheetList)
+                 .HasForeignKey(s => s.StudentFK)
+               .WillCascadeOnDelete(true);
 
+           
         }
     }
 }

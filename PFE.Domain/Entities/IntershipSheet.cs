@@ -11,7 +11,7 @@ namespace PFE.Domain.Entities
     public enum State { Approved, Rejected }
     public class IntershipSheet
     {
-        [Key]
+        
         public int IdIntershipSheet { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
@@ -22,7 +22,8 @@ namespace PFE.Domain.Entities
         public string PeroMail { get; set; }
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
-        public string State { get; set; }
+
+        public string State { get; set; } 
 
        
         public Compagny Compagny { get; set; }
@@ -33,6 +34,7 @@ namespace PFE.Domain.Entities
         public int CompagnyFK { get; set; }
         public int SheetCategoryFK { get; set; }
         public int StudentFK { get; set; }
+        public List<IntershipAgreementShhet> argements { get; set; }
 
 
     }
