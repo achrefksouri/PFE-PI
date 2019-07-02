@@ -13,10 +13,10 @@ namespace PFE.Data.Configurations
     {
         public ActionConfiguration()
         {
-            HasRequired<IntershipSheet>(a => a.IntershipSheet)
+            HasOptional<IntershipSheet>(a => a.IntershipSheet)
                 .WithMany(c => c.Actionlist)
                 .HasForeignKey(c => c.IntershipSheetFK)
-                .WillCascadeOnDelete(true);
+                .WillCascadeOnDelete(false);
         }
     }
     //te

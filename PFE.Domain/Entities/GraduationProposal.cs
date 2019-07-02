@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +16,11 @@ namespace PFE.Domain.Entities
         public  DateTime DateGraduateProposal { get; set; }
         public  string Classroom { get; set; }
 
-        public string statuts { get; set; }
-        public int StudentFK { get; set; }
-        public Student Student { get; set; }
+        public status statuts { get; set; }
+        
+        public int? StudentFK { get; set; }
+        [ForeignKey("StudentFK")]
+        public virtual Student Student { get; set; }
     }
 
 }

@@ -225,8 +225,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ClassViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OptionViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -309,14 +311,14 @@
     <Content Include="Views\Site\Create.cshtml" />
     <Content Include="Views\Site\Index.cshtml" />
     <Content Include="Views\School\Details.cshtml" />
-    <Content Include="Views\Class\Index.cshtml" />
-    <Content Include="Views\Class\Create.cshtml" />
     <Content Include="Views\Internshipsheet\Index.cshtml" />
     <Content Include="Views\Internshipsheet\Create.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
     <Content Include="Views\Agreement\Index.cshtml" />
     <Content Include="Views\Agreement\Create.cshtml" />
+    <Content Include="Views\Class\Index.cshtml" />
+    <Content Include="Views\Class\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

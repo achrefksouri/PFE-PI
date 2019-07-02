@@ -14,7 +14,7 @@ namespace PFE.Domain.Entities
 
 
 
-        public List<Site> Siteslist { get; set; } 
+        public virtual ICollection<Site> Siteslist { get; set; } 
 
     }
 }

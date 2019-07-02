@@ -13,6 +13,6 @@ namespace PFE.Web.Models
         public Departement Departement { get; set; }
         public List<CLass> ClassList { get; set; }
         public int DepartementFK { get; set; }
-        public List<ClassViewModel> Classes { get; set; }
+        public virtual ICollection<ClassViewModel> Classes { get; set; }
     }
 }

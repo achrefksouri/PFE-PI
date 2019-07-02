@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PFE.Domain.Entities.CLass>
+﻿@model IEnumerable<PFE.Web.Models.ClassViewModel>
 
 @{
     ViewBag.Title = "Index";
@@ -11,9 +11,6 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IdClass)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.label)
         </th>
@@ -29,9 +26,6 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.IdClass)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.label)
         </td>
         <td>
@@ -41,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.OptionFK)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdClass }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdClass }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdClass })
         </td>
     </tr>
 }

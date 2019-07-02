@@ -12,7 +12,8 @@ namespace PFE.Data.Configurations
     {
         public OptionConfiguration()
         {
-            HasRequired<Departement>(s => s.Departement).WithMany(c => c.OptionList).HasForeignKey(c => c.DepartementFK).WillCascadeOnDelete(true);
+            HasOptional<Departement>(s => s.Departement).WithMany(c => c.OptionList).HasForeignKey(c => c.DepartementFK).WillCascadeOnDelete(true);
         }
     }
+
 }

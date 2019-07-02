@@ -9,23 +9,18 @@ namespace PFE.Web.Models
 {
     public class ClassViewModel
     {
-        [Key]
+       
         public int IdClass { get; set; }
         public string label { get; set; }
 
         //propriétes de navigation
         public Option Option { get; set; }
         public OptionViewModel options { get; set; }
-        public int AcademicYear { get; set; }
-
-
-
-        public List<Student> StudentList { get; set; }
-
-
-
+        public DateTime AcademicYear { get; set; }
+        
+        public virtual ICollection<Student> StudentList { get; set; }
+        
         public int OptionFK { get; set; }
-
 
     }
 }

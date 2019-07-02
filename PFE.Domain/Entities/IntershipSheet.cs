@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PFE.Domain.Entities
 {
-    public enum State { Approved, Rejected }
+    public enum State { Approved, Rejected ,Await }
     public class IntershipSheet
     {
        
@@ -23,17 +23,19 @@ namespace PFE.Domain.Entities
         public string PeroMail { get; set; }
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
-        public string State { get; set; }
-      
-        public SheetCategory SheetCategory { get; set; }
-        
-        
-        public List<Action> Actionlist { get; set; }
-       
+        public State State { get; set; }
         public int SheetCategoryFK { get; set; }
-       
+        [ForeignKey("SheetCategory")]
+        public virtual SheetCategory SheetCategory { get; set; }
+        
+        
+        public virtual ICollection<Action> Actionlist { get; set; }
+
+        
+        public int IntershipAgreementShhetFK { get; set; }
+        [ForeignKey("IntershipAgreementShhetFK")]
         public virtual IntershipAgreementShhet IntershipAgreementShhet { get; set; }
-        public int IntershipAgreementShhetFK{ get; set; }
+        
 
 
     }
